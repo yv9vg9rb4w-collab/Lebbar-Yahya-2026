@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixel Run</title>
+</head>
+<body>
+  <h1>Présentation de Lebbar Yahya</h1>
+  <form onsubmit="return login()">
+    <input type="text" id="username" placeholder="Nom"><br>
+    <input type="password" id="password" placeholder="Mot de passe"><br>
+    <input type="submit" value="Se connecter">
+  </form>
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      if (user === "lebbar" && pass === "1234") {
+        window.location.href = "welcome.html";
+      } else {
+        alert("Nom ou mot de passe incorrect !!");
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
