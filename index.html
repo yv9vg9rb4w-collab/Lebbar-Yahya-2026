@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Connexion Pixel Run</title>
+  <title>Connexion à Pixel Run</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -10,23 +10,37 @@
       background: linear-gradient(to right, #ffcc00, #ff6666);
       color: white;
       padding-top: 100px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
     }
 
     input {
       padding: 10px;
       margin: 10px;
-      font-size: 18px;
+      font-size: 20px;
       border-radius: 5px;
       border: none;
+      width: 250px;
     }
 
     input[type="submit"] {
       background-color: #4CAF50;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 25px;
+      font-size: 20px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    input[type="submit"]:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #4CAF50;
     }
   </style>
 </head>
@@ -43,7 +57,7 @@
       const user = document.getElementById("username").value;
       const pass = document.getElementById("password").value;
 
-      if (user === "yahyalebbar" && pass === "12345") {
+      if (user === "yahyalebbar" && pass === "1234") {
         window.location.href = "welcome.html";
       } else {
         alert("Nom ou mot de passe incorrect !");
