@@ -16,11 +16,11 @@
       const user = document.getElementById("username").value;
       const pass = document.getElementById("password").value;
       if (user === "lebbaryahya" && pass === "2026") {
-        window.location.href = "welcome.html";
+        window.location.href = "welcome.html"; // 👈🏻 redirection vers la page suivante
       } else {
         alert("Nom ou mot de passe incorrect !!");
       }
-      return false;
+      return false; // 👈🏻 empêche le rechargement de la page
     }
   </script>
 </body>
