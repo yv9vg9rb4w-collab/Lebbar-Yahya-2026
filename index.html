@@ -7,7 +7,7 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      background: linear-gradient(to right, #ffcc00, #ff6666);
       color: white;
       padding-top: 100px;
     }
@@ -21,13 +21,12 @@
     }
 
     input[type="submit"] {
-      background-color: #ff5e57;
+      background-color: #4CAF50;
       color: white;
-      cursor: pointer;
       padding: 10px 20px;
-      font-size: 18px;
-      border-radius: 5px;
       border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -44,7 +43,7 @@
       const user = document.getElementById("username").value;
       const pass = document.getElementById("password").value;
 
-      if (user === "lebbar" && pass === "1234") {
+      if (user === "yahyalebbar" && pass === "1234") {
         window.location.href = "welcome.html";
       } else {
         alert("Nom ou mot de passe incorrect !");
